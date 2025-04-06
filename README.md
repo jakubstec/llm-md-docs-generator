@@ -9,6 +9,8 @@
     <br> 
 </p>
 
+
+
 ## 📝 Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)
@@ -17,6 +19,9 @@
 - [Features](#features)
 - [Built Using](#built_using)
 - [Authors](#authors)
+
+#### [Generated Documentation for @rescui/use-glow-hover package](docs/-rescui-use-glow-hover.md)
+#### [Generated Tests suite for @rescui/use-glow-hover](tests/-rescui-use-glow-hover.md)
 
 ## 🧐 About <a name="about"></a>
 This project streamlines the documentation process for NPM packages by using Google's Gemini AI model to automatically generate comprehensive documentation and test suites. By simply providing a package name, the tool analyzes the package and creates well-structured Markdown documentation and testing guidelines, saving developers significant time and ensuring consistency across projects.
