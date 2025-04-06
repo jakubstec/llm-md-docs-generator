@@ -1,0 +1,27 @@
+{
+  "name": "llm-markdown-documentation-generator",
+  "version": "1.0.0",
+  "description": "A versatile documentation generator tool that uses Google's Gemini LLM to create comprehensive Markdown documentation for any NPM package. Currently being used to document @rescui/use-glow-hover package, generating API documentation, usage examples, and implementation details.",
+  "main": "index.js",
+  "scripts": {
+    "generate-docs": "ts-node src/index.ts",
+    "generate-tests": "ts-node src/tests.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "demo-docs": "ts-node src/index.ts @rescui/use-glow-hover",
+    "demo-tests": "ts-node src/tests.ts @rescui/use-glow-hover"
+  },
+  "keywords": [],
+  "author": "Jakub Steć",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^0.6.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

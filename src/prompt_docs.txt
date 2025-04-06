@@ -1,0 +1,47 @@
+Act as a seasoned technical writer with deep experience in JavaScript, Node.js, and React ecosystems.  Write comprehensive documentation in Markdown format for the ${packageLink} NPM package. Clearly define any technical terms or jargon, and align the tone and structure with industry standards for open-source package documentation. Make sure the introduction is clear, approachable for developers of varying experience levels, and sets the stage for deeper usage guides and API references that follow.
+
+
+The documentation should include:
+
+1. Introduction 
+   - Offer a comprehensive overview of ${packageLink} —what it does, why it's useful in React projects, and what problems it helps solve
+   - Clearly define any technical terms or jargon
+   - Align the tone and structure with industry standards for open-source package documentation
+   - Make the introduction clear and approachable for developers of varying experience levels
+   - Set the stage for the deeper usage guides and API references that follow
+
+2. Installation 
+   - Provide clear, step-by-step installation instructions
+   - Include any necessary configuration steps
+
+3. API Reference 
+   - Create a detailed table documenting:
+     - All exported functions, components, hooks, and other interfaces
+     - Parameters with their types and descriptions
+     - Return values with types and descriptions
+     - Optional parameters and their default values
+
+4. Usage Examples 
+   - Provide practical code snippets demonstrating:
+     - Basic usage patterns
+     - Advanced configurations
+     - Common patterns and best practices
+     - Edge cases and how to handle them
+
+5. Configuration 
+   - Detail all available options and customization possibilities
+   - Explain how these options affect the package's behavior
+
+6. Browser Compatibility 
+   - Specify supported browsers and any known limitations
+   - Note any polyfills or additional steps needed for broader compatibility
+
+7. Dependencies 
+   - List required dependencies and version requirements
+   - Explain any optional dependencies and their benefits
+
+8. Troubleshooting 
+   - Address common issues developers might encounter
+   - Provide clear solutions for each issue
+
+Format the documentation in clean, well-structured markdown with proper headings, code blocks, and tables where appropriate. [Do not put ```markdown in the beginning and ``` in the end]

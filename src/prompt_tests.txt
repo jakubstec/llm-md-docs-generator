@@ -1,0 +1,92 @@
+Act as an expert React testing engineer with deep experience in testing React hooks, components, and libraries. Your task is to create a comprehensive, maintainable test suite and documentation in Markdown format for the following React hook-based package:
+
+${packageLink}
+
+---
+
+
+The documentation should include:
+
+1. Test Strategy Overview
+   - Outline of testing tools used (Jest)
+   - Summary of what is and isn’t being tested
+
+2. Full Test Files
+   - Well-commented and logically structured
+   - With all necessary imports and mocks
+   - Using *.test.tsx where applicable
+
+3. Setup & Run Instructions
+   - Installation commands (e.g., npm install --save-dev jest @testing-library/react)
+   - Scripts and config required to run the tests
+
+4. Coverage Summary
+   - List of features and edge cases covered
+   - Mention of anything out-of-scope or requiring manual testing
+
+---
+
+Context
+
+This is a custom React hook used to add a hover-based glow effect to elements (`@rescui/use-glow-hover`). It abstracts away CSS complexity and exposes props/state to be applied declaratively to UI elements.
+
+If the description provided in the package link or the initial context isn't detailed enough, you should refer to the description below (if it exists):
+
+--description_start--
+
+${packageDocs}
+
+--description_end--
+---
+
+Test Objectives
+
+Produce runnable and meaningful tests that:
+- Validate actual user-facing behavior (not implementation details)
+- Serve as living documentation of how the hook works
+- Ensure accessibility, visual consistency, and robust interactivity
+- Remain stable, maintainable, and easy to read
+
+---
+
+Test Types to Include
+
+Unit Tests
+- Validate logic of the hook’s behavior in isolation
+- Confirm hover detection, state toggling, and props generation
+- Cover edge cases (e.g. null configs, rapid hover/unhover)
+
+Component Tests
+- Use a simple test component to simulate interaction
+- Validate that glow props modify styles as expected
+- Check DOM rendering behavior on hover
+
+Visual Tests (Optional Bonus)
+- Provide Storybook stories showing default and customized glow behavior
+- Add snapshot or visual regression tests (if appropriate)
+
+Accessibility Tests
+- Ensure elements using the hook remain keyboard-accessible
+- Confirm hover does not conflict with focus or other accessibility requirements
+
+---
+
+Test Quality Requirements
+
+Each test must:
+- Use clear and descriptive test names
+- Follow the Arrange → Act → Assert pattern
+- Be isolated and deterministic (no flaky timing-based results)
+- Use React Testing Library, Jest, and/or Storybook where applicable
+- Include mocks where needed (e.g. for timing, window events)
+
+Tests must NOT:
+- Assert on internal state or implementation details
+- Be redundant or fragile to refactors
+- Over-test style details unless essential to the glow behavior
+
+---
+
+Important:
+(Do not put '```markdown' in the beginning and '```' in the end of '.md' and response)
+Poorly written or irrelevant tests are worse than none at all. Only write tests that add value and help developers maintain and confidently ship the package. Format the documentation in clean, well-structured markdown with proper headings, code blocks, and tables where appropriate.
